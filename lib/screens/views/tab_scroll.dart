@@ -15,6 +15,9 @@ class TabScroll extends HookWidget {
 
     useEffect(() {
       listController.addListener(() {
+        // print(
+        //     'listController.position.pixels:${listController.position.pixels}');
+
         /// load date at when scroll reached -100
         if (listController.position.pixels >
             listController.position.maxScrollExtent - 100) {
